@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qni_IOCPNet", "Qni_IOCPNet\Qni_IOCPNet.csproj", "{44B03FA0-2A05-40AD-AF4C-070DE21D4CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOCP_Server", "IOCP_Server\IOCP_Server.csproj", "{E4EE5861-F365-45C8-AD3A-BAB81CA5C1C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOCP_Client", "IOCP_Client\IOCP_Client.csproj", "{E59D81B4-04A2-4696-A813-BD6729A61855}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOCP_NetMessageProtocol", "NetMessageProtocol\IOCP_NetMessageProtocol.csproj", "{68739D2D-458D-43C3-B8B6-9D62ACC4EC00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44B03FA0-2A05-40AD-AF4C-070DE21D4CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B03FA0-2A05-40AD-AF4C-070DE21D4CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B03FA0-2A05-40AD-AF4C-070DE21D4CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B03FA0-2A05-40AD-AF4C-070DE21D4CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4EE5861-F365-45C8-AD3A-BAB81CA5C1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4EE5861-F365-45C8-AD3A-BAB81CA5C1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4EE5861-F365-45C8-AD3A-BAB81CA5C1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4EE5861-F365-45C8-AD3A-BAB81CA5C1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E59D81B4-04A2-4696-A813-BD6729A61855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E59D81B4-04A2-4696-A813-BD6729A61855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E59D81B4-04A2-4696-A813-BD6729A61855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E59D81B4-04A2-4696-A813-BD6729A61855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68739D2D-458D-43C3-B8B6-9D62ACC4EC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68739D2D-458D-43C3-B8B6-9D62ACC4EC00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68739D2D-458D-43C3-B8B6-9D62ACC4EC00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68739D2D-458D-43C3-B8B6-9D62ACC4EC00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7072C75C-8963-4F6E-AB96-4D73CBCEFC8B}
+	EndGlobalSection
+EndGlobal
