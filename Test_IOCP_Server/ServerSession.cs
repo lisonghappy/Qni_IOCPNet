@@ -16,7 +16,7 @@ namespace IOCP_Server {
     public class ServerSession : IOCPSession {
         protected override void OnConnected () {
             IOCPUtils.Logger.LogWithColorFormat(IOCPUtils.Logger.ELogColor.Green,
-                "Client online, allocate session ID:{0}", sessionID);
+                "Client online, allocate session ID:{0}", sessionId);
         }
 
         protected override void OnDisconnected () {

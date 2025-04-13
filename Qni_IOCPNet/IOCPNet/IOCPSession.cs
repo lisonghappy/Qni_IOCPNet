@@ -25,10 +25,10 @@ namespace IOCPNet {
     public abstract class IOCPSession {
 
         private Socket socket;
-        public int sessionID;
+        public uint sessionId;
         private IOCPSessionState sessionState = IOCPSessionState.None;
 
-        private Action<int> OnSessionCloseCallback;
+        private Action<uint> OnSessionCloseCallback;
 
 
         //send
@@ -57,7 +57,7 @@ namespace IOCPNet {
         }
 
 
-        public void Init (Socket socket, Action<int> OnSessionCloseCallback = null) {
+        public void Init (Socket socket, Action<uint> OnSessionCloseCallback = null) {
             this.socket = socket;
             this.OnSessionCloseCallback = OnSessionCloseCallback;
 
@@ -128,7 +128,7 @@ namespace IOCPNet {
             }
             else {
                 IOCPUtils.Logger.LogWarningFormat("[Session process receive ] id:{0} , receive len:{1}, SocketError: {2}",
-                    sessionID, receiveEventArgs.BytesTransferred, receiveEventArgs.SocketError.ToString());
+                    sessionId, receiveEventArgs.BytesTransferred, receiveEventArgs.SocketError.ToString());
                 Close();
             }
         }
@@ -241,7 +241,7 @@ namespace IOCPNet {
                 sessionState = IOCPSessionState.Disconnected;
                 OnDisconnected();
 
-                OnSessionCloseCallback?.Invoke(sessionID);
+                OnSessionCloseCallback?.Invoke(sessionId);
 
                 receiveCacheList.Clear();
                 sendCacheQueue.Clear();

@@ -31,6 +31,9 @@ namespace IOCPNet {
         private List<T_Session> sessionList;
         private IOCPServerSessionPool<T_Session> sessionPool;
 
+        public IOCPServer ():base() {
+            sessionList = new List<T_Session>();
+        }
 
         /// <summary>
         /// server start
@@ -54,7 +57,7 @@ namespace IOCPNet {
             sessionPool = new IOCPServerSessionPool<T_Session>(maxConnectCount);
             for (int i = 0; i < maxConnectCount; i++) {
                 T_Session session = new T_Session {
-                    sessionID = i
+                    sessionId = GenerateUniqueSessionID()
                 };
                 sessionPool.Push(session);
             }
@@ -103,10 +106,10 @@ namespace IOCPNet {
             StartAccept();
         }
 
-        private void OnSessionClose (int sessionID) {
+        private void OnSessionClose (uint sessionId) {
             int index = -1;
             for (int i = 0; i < sessionList.Count; i++) {
-                if (sessionList[i].sessionID == sessionID) {
+                if (sessionList[i].sessionId == sessionId) {
                     index = i;
                     break;
                 }
@@ -120,7 +123,7 @@ namespace IOCPNet {
                 acceptSeamaphore.Release();
             }
             else {
-                IOCPUtils.Logger.LogErrorFormat("Session:{0} cannot find in server session list.", sessionID);
+                IOCPUtils.Logger.LogErrorFormat("Session:{0} cannot find in server session list.", sessionId);
             }
         }
 
@@ -167,6 +170,33 @@ namespace IOCPNet {
             return sessionList;
         }
 
+
+
+
+        private uint sid = 0;
+        private uint GenerateUniqueSessionID () {
+            lock (sessionList) {
+                while (true) {
+                    ++sid;
+                    if (sid == uint.MaxValue) {
+                        sid = 1;
+                    }
+
+                    var _isContain = false;
+                    foreach (var item in sessionList) {
+                        if (item.sessionId == sid) {
+                            _isContain = true;
+                            break;
+                        }
+                    }
+
+                    if (!_isContain) {
+                        break;
+                    }
+                }
+            }
+            return sid;
+        }
     }
 }
 
