@@ -5,15 +5,14 @@
 // Author:   lisonghappy
 // Email:    lisonghappy@gmail.com
 // Date:     2025/4/12
-// Desc:        
+// Desc:     client net session
 //
 // ------------------------------------
 using IOCPNet;
 using NetProtocol;
 
 
-namespace IOCP_Client
-{
+namespace IOCP_Client {
     public class ClientSession : IOCPSession {
 
 

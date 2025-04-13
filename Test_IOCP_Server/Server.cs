@@ -1,4 +1,14 @@
-﻿using IOCPNet;
+﻿// ------------------------------------
+//
+// FileName: Server.cs
+//
+// Author:   lisonghappy
+// Email:    lisonghappy@gmail.com
+// Date:     2025/4/12
+// Desc:     server
+//
+// ------------------------------------
+using IOCPNet;
 using NetProtocol;
 
 
@@ -9,7 +19,7 @@ namespace IOCP_Server {
         static void Main (string[] args) {
 
 
-            var ip = "192.168.0.108";
+            var ip = "127.0.0.1";
             var port = 12180;
             IOCPServer<ServerSession> server = new IOCPServer<ServerSession>();
 
@@ -26,9 +36,9 @@ namespace IOCP_Server {
                     if (!string.IsNullOrEmpty(ipt) && ipt == "bag") {
                         var _info = "Server.Broadcast: " + ipt;
                         IOCPUtils.Logger.Log(_info);
-                        var _netMessage = new NetMessage{
+                        var _netMessage = new NetMessage {
                             Header = new NetMessageHeader {
-                            Cmd = Cmd.BagInfo
+                                Cmd = Cmd.BagInfo
                             },
                             Body = new NetMessageBody {
                                 responseBagInfo = new NetMessageResponseBagInfo {

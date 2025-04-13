@@ -5,11 +5,11 @@ VisualStudioVersion = 25.0.1706.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qni_IOCPNet", "Qni_IOCPNet\Qni_IOCPNet.csproj", "{44B03FA0-2A05-40AD-AF4C-070DE21D4CDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOCP_Server", "IOCP_Server\IOCP_Server.csproj", "{E4EE5861-F365-45C8-AD3A-BAB81CA5C1C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_IOCP_NetMessageProtocol", "Test_IOCP_NetMessageProtocol\Test_IOCP_NetMessageProtocol.csproj", "{284745AB-F2FF-44DA-9917-1E61C95D3383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOCP_Client", "IOCP_Client\IOCP_Client.csproj", "{E59D81B4-04A2-4696-A813-BD6729A61855}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_IOCP_Server", "Test_IOCP_Server\Test_IOCP_Server.csproj", "{BF47EBD4-CCDE-4F94-AA02-D0BCEE891598}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IOCP_NetMessageProtocol", "NetMessageProtocol\IOCP_NetMessageProtocol.csproj", "{68739D2D-458D-43C3-B8B6-9D62ACC4EC00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_IOCP_Client", "Test_IOCP_Client\Test_IOCP_Client.csproj", "{5C9146E4-4EB9-4D3A-8540-7409F448CFDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +21,18 @@ Global
 		{44B03FA0-2A05-40AD-AF4C-070DE21D4CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44B03FA0-2A05-40AD-AF4C-070DE21D4CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44B03FA0-2A05-40AD-AF4C-070DE21D4CDB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E4EE5861-F365-45C8-AD3A-BAB81CA5C1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E4EE5861-F365-45C8-AD3A-BAB81CA5C1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E4EE5861-F365-45C8-AD3A-BAB81CA5C1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E4EE5861-F365-45C8-AD3A-BAB81CA5C1C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E59D81B4-04A2-4696-A813-BD6729A61855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E59D81B4-04A2-4696-A813-BD6729A61855}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E59D81B4-04A2-4696-A813-BD6729A61855}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E59D81B4-04A2-4696-A813-BD6729A61855}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68739D2D-458D-43C3-B8B6-9D62ACC4EC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68739D2D-458D-43C3-B8B6-9D62ACC4EC00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68739D2D-458D-43C3-B8B6-9D62ACC4EC00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68739D2D-458D-43C3-B8B6-9D62ACC4EC00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{284745AB-F2FF-44DA-9917-1E61C95D3383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284745AB-F2FF-44DA-9917-1E61C95D3383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284745AB-F2FF-44DA-9917-1E61C95D3383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284745AB-F2FF-44DA-9917-1E61C95D3383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF47EBD4-CCDE-4F94-AA02-D0BCEE891598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF47EBD4-CCDE-4F94-AA02-D0BCEE891598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF47EBD4-CCDE-4F94-AA02-D0BCEE891598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF47EBD4-CCDE-4F94-AA02-D0BCEE891598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C9146E4-4EB9-4D3A-8540-7409F448CFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9146E4-4EB9-4D3A-8540-7409F448CFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9146E4-4EB9-4D3A-8540-7409F448CFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9146E4-4EB9-4D3A-8540-7409F448CFDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

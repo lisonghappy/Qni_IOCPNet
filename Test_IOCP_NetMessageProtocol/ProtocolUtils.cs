@@ -1,4 +1,15 @@
-﻿using System;
+﻿// ------------------------------------
+//
+// FileName: NetProtocol.cs
+//
+// Author:   lisonghappy
+// Email:    lisonghappy@gmail.com
+// Date:     2025/4/12
+// Desc:        
+//
+// ------------------------------------
+
+using System;
 using System.IO;
 
 namespace NetProtocol {

@@ -1,4 +1,14 @@
-﻿using IOCPNet;
+﻿// ------------------------------------
+//
+// FileName: ServerSession.cs
+//
+// Author:   lisonghappy
+// Email:    lisonghappy@gmail.com
+// Date:     2025/4/12
+// Desc:     server net session 
+//
+// ------------------------------------
+using IOCPNet;
 using NetProtocol;
 
 
